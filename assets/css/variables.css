@@ -1,0 +1,18 @@
+:root {
+    /* ### Primary */
+
+    --MainDark: hsl(243, 87%, 12%);
+    --MainSmooth: hsl(238, 22%, 44%);
+
+    /* ### Accent */
+
+    --Button: hsl(224, 93%, 58%);
+    --Link: hsl(170, 45%, 43%);
+
+    /* ### Neutral */
+
+    --Neutral01: hsl(240, 75%, 98%);
+    --Neutral02: hsl(0, 0%, 75%);
+
+    --ParagraphSize: 1.6rem;
+}
