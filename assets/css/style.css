@@ -90,7 +90,7 @@ h1,h2 {
     grid-template-columns: minmax(30rem, 54rem) 1fr;
     padding: 0 var(--DefaultSpacing);
     gap: 5rem;
-    
+
     margin-bottom: var(--DefaultSpacing);
 }
 
@@ -103,4 +103,43 @@ h1,h2 {
     grid-template-columns: minmax(30rem, 57rem) 1fr;
     padding: 10rem var(--DefaultSpacing);
     gap: 5rem;
+}
+
+/* ~~ TESTIMONIAL CARD STYLE ~~ */
+.testimonial-card {
+    background-color: #fff;
+    padding: 4rem;
+    max-width: 42rem;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem -0.5rem var(--Neutral02);
+    
+    color: var(--MainDark);
+}
+.card-content img {
+    width: 2rem;
+}
+
+.card-content p {
+    margin: 2rem 0;
+}
+
+.testimonial-profile {
+    display: flex;
+    align-items: center;
+}
+.testimonial-profile .avatar-image img {
+    border-radius: 50%;
+    width: 3.5rem;
+}
+.testimonial-profile .profile-info {
+    margin-left: 1rem;
+    font-family: "Raleway", sans-serif;
+}
+.testimonial-profile .profile-info .profile-name {
+    font-size: 1.5rem;
+}
+.testimonial-profile .profile-info .profile-role {
+    font-size: 1rem;
+    line-height: 2;
 }
