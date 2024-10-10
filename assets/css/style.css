@@ -16,19 +16,15 @@ h1, h2, h3 {
 /* GRID CONFIG */
 #header{
     grid-area: header;
-    /* background-color: coral; */
 }
 #acessible-location{
     grid-area: acessible-location;
-    /* background-color: crimson; */
 }
 #productive{
     grid-area: productive;
-    /* background-color: beige; */
 }
 #early-access{
     grid-area: early-acess;
-    background-color: cornflowerblue;
 }
 #footer {
     grid-area: footer;
@@ -138,8 +134,28 @@ h1,h2 {
 }
 .testimonial-profile .profile-info .profile-name {
     font-size: 1.5rem;
+    font-weight: 700;
 }
 .testimonial-profile .profile-info .profile-role {
     font-size: 1rem;
     line-height: 2;
+}
+
+/* ~~ EARLY ACCESS SECTION STYLE ~~  */
+#early-access {
+    background-color: var(--MainSmooth);
+    color: var(--Neutral01);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: var(--DefaultSpacing);
+}
+#early-access .content {
+    padding-right: 15rem;
+}
+#early-access .content h2 {
+    font-size: 3rem;
+}
+#early-access form {
+    padding: 0 var(--DefaultSpacing);
 }
