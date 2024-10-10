@@ -4,3 +4,27 @@
 /* Google fonts - Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@85.2,300..800&display=swap');
 
+
+/* GRID CONFIG */
+#header{
+    grid-area: header;
+}
+#acessible-location{
+    grid-area: acessible-location;
+}
+#productive{
+    grid-area: productive;
+}
+#early-access{
+    grid-area: early-acess;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "acessible-location acessible-location"
+        "productive productive"
+        "early-acess early-acess"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+}
