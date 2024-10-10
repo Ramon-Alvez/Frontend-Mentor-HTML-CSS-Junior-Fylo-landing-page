@@ -5,18 +5,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@85.2,300..800&display=swap');
 
 
+html {
+    font-size: 62.5%;
+}
 /* GRID CONFIG */
 #header{
     grid-area: header;
+    background-color: coral;
 }
 #acessible-location{
     grid-area: acessible-location;
+    background-color: crimson;
 }
 #productive{
     grid-area: productive;
+    background-color: beige;
 }
 #early-access{
     grid-area: early-acess;
+    background-color: cornflowerblue;
 }
 .container {
     display: grid;
@@ -27,4 +34,27 @@
         "early-acess early-acess"
     ;
     grid-template-columns: repeat(2, 1fr);
+    font-size: var(--ParagraphSize);
+}
+
+/* ~~ HEADER STYLE ~~ */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 5rem;
+}
+#header .fylo-logo img {
+    width: 100%;
+}
+#header .menu ul {
+    display: flex;
+}
+#header .menu ul li {
+    padding: 2rem 3rem;
+}
+#header .menu ul li a {
+    font-family: "Raleway", sans-serif;
+    color: var(--MainDark);
 }
