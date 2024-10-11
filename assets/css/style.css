@@ -43,12 +43,19 @@ h1, h2, h3 {
 }
 
 /* ~~ HEADER STYLE ~~ */
-
 #header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#header .header-container {
+    max-width: var(--MaxWidth);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6rem var(--DefaultSpacing);
+    padding: 6rem 0;
+    margin: 0 var(--DefaultMargin);
 }
 #header .fylo-logo img {
     width: 100%;
@@ -80,6 +87,15 @@ h1,h2 {
     font-size: 3.5rem;
     line-height: 1.5;
 }
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-container {
+    max-width: var(--MaxWidth);
+    margin: 0 var(--DefaultMargin);
+}
 .section-content {
     display: flex;
     flex-direction: column;
@@ -88,27 +104,43 @@ h1,h2 {
 }
 
 /* SECTION IMAGES SIZING */
+.section-image {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
 .section-image img {
-    width: 100%;    
+    width: 100%;   
 }
 /* ~~ FIRST SECTION STYLE ~~  */
-#acessible-location{
+#acessible-location .section-container {
     display: grid;
     grid-template-columns: minmax(30rem, 54rem) 1fr;
-    padding: 0 var(--DefaultSpacing);
     gap: 5rem;
 
-    margin-bottom: var(--DefaultSpacing);
+    margin-bottom: calc(5rem + 15rem);
 }
 
 /* ~~ SECOND SECTION STYLE ~~  */
 #productive {
+    position: relative;
+    background-color: #f8f8fe;
+    padding: var(--DefaultPadding) 0;
+}
+/* BG PATTERN STYLE */
+#productive .bg-image {
     background: url(../images/bg-curve-desktop.svg) no-repeat center center;
     background-size: cover;
+    width: 100%;
+    height: 15rem;
+    position: absolute;
+    top: -10rem;
+    z-index: -1;
+}
 
+#productive .section-container {
     display: grid;
     grid-template-columns: minmax(30rem, 57rem) 1fr;
-    padding: 10rem var(--DefaultSpacing);
     gap: 5rem;
 }
 #productive .section-content a {
@@ -140,6 +172,7 @@ h1,h2 {
     background-color: #fff;
     padding: 4rem;
     max-width: 42rem;
+    margin: 2rem 0;
 
     border-radius: 1rem;
     box-shadow: 0 0 2rem -0.5rem var(--Neutral02);
@@ -179,19 +212,17 @@ h1,h2 {
 #early-access {
     background-color: var(--MainSmooth);
     color: var(--Neutral01);
+    padding: var(--DefaultPadding) 0;
+}
+#early-access .section-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    padding: var(--DefaultSpacing);
 }
 #early-access .content {
     padding-right: 15rem;
 }
 #early-access .content h2 {
     font-size: 3rem;
-}
-#early-access form {
-    padding: 0 var(--DefaultSpacing);
 }
 
 
@@ -244,7 +275,6 @@ form .button:hover {
 #early-access #form-2 #email-2 {
     padding: 2rem ;
     width: 100%;
-    margin-right: 2rem;
 
     border: none;
     color: var(--MainDark);
@@ -268,10 +298,17 @@ form .button:hover {
 .coded-by {
     grid-area: coded-by;
 }
-footer #footer-content {
+#footer {
     background-color: var(--MainDark);
     color: var(--Neutral01);
-
+    display: flex;
+    justify-content: center;
+    
+    padding: var(--DefaultPadding) 0;
+}
+#footer #footer-content {
+    max-width: var(--MaxWidth);
+    width: 100%;
     display: grid;
     grid-template-areas: 
         "fylo-logo fylo-logo fylo-logo fylo-logo"
@@ -279,9 +316,9 @@ footer #footer-content {
         "coded-by coded-by coded-by coded-by"
     ;
     grid-template-columns: repeat(4, 1fr);
-    padding: var(--DefaultSpacing);
     gap: 2rem;
     font-size: var(--ParagraphSize);
+    margin: 0 var(--DefaultMargin);
 }
 /* CONTACT SECTION */
 #footer-content .contact {
@@ -301,7 +338,6 @@ footer #footer-content {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin: 0 var(--DefaultSpacing);
 }
 
 #footer-content .about-nav ul li a,

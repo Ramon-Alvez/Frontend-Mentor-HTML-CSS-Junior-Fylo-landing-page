@@ -17,7 +17,9 @@
 
     --ParagraphSize: 1.6rem;
 
-    --DefaultSpacing: 7rem;
+    --DefaultPadding: 8rem;
+    --DefaultMargin: 2rem;
 
     --BrightnessFilter: 1.4;
+    --MaxWidth: 120rem;
 }
