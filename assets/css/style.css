@@ -100,6 +100,24 @@ h1,h2 {
     padding: 10rem var(--DefaultSpacing);
     gap: 5rem;
 }
+#productive .section-content a {
+    color: var(--Link);
+    border-bottom: 0.1rem solid var(--Link);
+    width: fit-content;
+    line-height: 2;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#productive .section-content a::after {
+    content: '';
+    display: inline-block;
+    background: url(../images/icon-arrow.svg) no-repeat center center;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
 
 /* ~~ TESTIMONIAL CARD STYLE ~~ */
 .testimonial-card {
@@ -204,7 +222,7 @@ form .button {
     width: 100%;
     margin-right: 2rem;
 
-    border: 0.1rem solid var(--MainDark);
+    border: none;
     color: var(--MainDark);
 }
 
