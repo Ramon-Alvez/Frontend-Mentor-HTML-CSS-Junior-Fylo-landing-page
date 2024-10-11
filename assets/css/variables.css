@@ -7,6 +7,7 @@
     /* ### Accent */
 
     --Button: hsl(224, 93%, 58%);
+    --Hover: hsl(224, 93%, 58%);
     --Link: hsl(170, 45%, 43%);
 
     /* ### Neutral */
@@ -17,4 +18,6 @@
     --ParagraphSize: 1.6rem;
 
     --DefaultSpacing: 7rem;
+
+    --BrightnessFilter: 1.4;
 }

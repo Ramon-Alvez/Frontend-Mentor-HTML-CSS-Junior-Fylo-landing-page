@@ -52,6 +52,11 @@ h1, h2, h3 {
 }
 #header .fylo-logo img {
     width: 100%;
+    transition: 0.2s ease-in-out;
+}
+/* LOGO HOVER */
+#header .fylo-logo img:hover {
+    transform: scale(1.02);
 }
 #header .menu ul {
     display: flex;
@@ -62,6 +67,12 @@ h1, h2, h3 {
 #header .menu ul li a {
     font-family: "Raleway", sans-serif;
     color: var(--MainDark);
+    transition: 0.2s ease-in;
+}
+/* MENU HOVER */
+#header .menu ul li a:hover {
+    color: var(--Hover);
+    border-bottom: 0.1rem solid var(--Hover);
 }
 
 /* ~~ SECTION STYLE ~~  */
@@ -109,6 +120,7 @@ h1,h2 {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    transition: 0.2s ease-in-out;
 }
 #productive .section-content a::after {
     content: '';
@@ -116,8 +128,12 @@ h1,h2 {
     background: url(../images/icon-arrow.svg) no-repeat center center;
     width: 1.6rem;
     height: 1.6rem;
+    transition: 0.2s ease-in;
 }
-
+/* HOVER EFFECT */
+#productive .section-content a:hover {
+    filter: brightness(var(--BrightnessFilter));
+}
 
 /* ~~ TESTIMONIAL CARD STYLE ~~ */
 .testimonial-card {
@@ -190,9 +206,17 @@ form .button {
     height: 4.2rem;
 
     border: none;
+    box-shadow: 0.5rem 0.5rem 1.5rem -1rem var(--MainDark);
     background-color: var(--Button);
     color: var(--Neutral01);
     font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+/* HOVER EFFECT */
+form .button:hover {
+    filter: brightness(var(--BrightnessFilter));
 }
 
 
@@ -283,8 +307,14 @@ footer #footer-content {
 #footer-content .about-nav ul li a,
 #footer-content .about2-nav ul li a {
     color: var(--Neutral01);
+    transition: 0.2s ease-in-out;
 }
-
+/* NAV HOVER EFFECTS */
+#footer-content .about-nav ul li a:hover,
+#footer-content .about2-nav ul li a:hover {
+    color: var(--Hover);
+    filter: brightness(var(--BrightnessFilter));
+}
 /* MEDIA NAV STYLE */
 #footer-content .media ul {
     display: flex;
@@ -299,9 +329,29 @@ footer #footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: 0.2s ease-in-out;
+}
+/* MEDIA NAV HOVER EFFECTS */
+#footer-content .media ul li a:hover {
+    color: var(--Hover);
+    border: 0.1rem solid var(--Hover);
+    filter: brightness(var(--BrightnessFilter));
 }
 
 /* CODED BY SECTION */
 #footer-content .coded-by {
     padding: 1rem;
+}
+.coded-by .attribution { 
+    font-size: 1.2rem; 
+    text-align: center; 
+}
+.coded-by .attribution a { 
+    color: hsl(228, 45%, 44%); 
+    transition: 0.2s ease-in-out;
+}
+.coded-by .attribution a:hover {
+    color: var(--Hover);
+    filter: brightness(var(--BrightnessFilter));
 }
